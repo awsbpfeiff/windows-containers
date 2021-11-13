@@ -7,7 +7,7 @@ To interface with containers on Windows, we will utilize Docker.  Docker is an o
 
 Let’s begin the installation.  You will need a couple components installed on your lab host and we will deploy these using PowerShell.  
 
-> 1. Log into your lab host and open an Administrative PowerShell session.  Run the following:
+> *  Log into your lab host and open an Administrative PowerShell session.  Run the following:
 
 ```powershell
 Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
