@@ -51,11 +51,18 @@ docker version
 
 > ![](/static/images/docker-version.png)
 
+* Using the info command provides useful data about the Docker container host you are working with.  This will provide stats like image count, container count, logging info, and drivers in use
+
+```powershell
+docker info
+```
+> ![](/static/images/docker-info.png)
+
 * You can now access the Docker host remotely
 
 > [Remote Management for Docker Host](https://docs.microsoft.com/en-us/virtualization/windowscontainers/management/manage_remotehost)
 
 * These options you likely won't configure regularly but it is good to know they exist - Docker Daemon startup options:
 
-> [Docker d startup options](https://docs.docker.com/engine/reference/commandline/dockerd/)
+> [Dockerd startup options](https://docs.docker.com/engine/reference/commandline/dockerd/)
 
