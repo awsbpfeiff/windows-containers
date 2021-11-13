@@ -7,24 +7,24 @@ To interface with containers on Windows, we will utilize Docker.  Docker is an o
 
 Let’s begin the installation.  You will need a couple components installed on your lab host and we will deploy these using PowerShell.  
 
-> *  Log into your lab host and open an Administrative PowerShell session.  Run the following:
+*  Log into your lab host and open an Administrative PowerShell session.  Run the following:
 
 ```powershell
 Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
 ```
 
-> 1. *Enter Y* to download all components
+* *Enter Y* to download all components
 
 ```powershell
 Install-Package -Name docker -ProviderName DockerMsftProvider -Verbose
 ```
 
-> 1. **Enter A** as the source is listed as untrusted
+* **Enter A** as the source is listed as untrusted
     * **Note:** This will download the binaries for the docker engine, *Enable the Native Containers feature in Windows*, and install the Docker Provider.  
-    * ![](/static/images/install-docker.png)
+>    * ![](/static/images/install-docker.png)
 * You will see two core files being referenced
 
-```bash
+```powershell
 C:\Program Files\docker\docker.exe << This is the Docker Client. 
 C:\Program Files\docker\dockerd.exe << This is the Docker Engine. 
 ```
@@ -41,9 +41,9 @@ Restart-Computer -Force
 Get-Service docker
 ```
 
-![](/static/images/docker-service.png)
+> ![](/static/images/docker-service.png)
 
 * Next run
 
 docker version
-![](/static/images/docker-version.png)
+> ![](/static/images/docker-version.png)
