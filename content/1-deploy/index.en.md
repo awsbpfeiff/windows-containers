@@ -21,7 +21,7 @@ Install-Package -Name docker -ProviderName DockerMsftProvider -Verbose
 
 * **Enter A** as the source is listed as untrusted
     * **Note:** This will download the binaries for the docker engine, *Enable the Native Containers feature in Windows*, and install the Docker Provider.  
->    * ![](/static/images/install-docker.png)
+>   ![](/static/images/install-docker.png)
 * You will see two core files being referenced
 
 ```powershell
@@ -45,5 +45,9 @@ Get-Service docker
 
 * Next run
 
+```powershell
 docker version
+```
+
 > ![](/static/images/docker-version.png)
+
