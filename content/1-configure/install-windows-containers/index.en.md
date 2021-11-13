@@ -1,6 +1,6 @@
 ---
 title: "Installing Windows Containers"
-weight: 1
+weight: 2
 ---
 
 To interface with containers on Windows, we will utilize Docker.  Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
@@ -43,11 +43,19 @@ Get-Service docker
 
 > ![](/static/images/docker-service.png)
 
-* Next run
+* Next run the following to see details about the version of Docker you are running:
 
 ```powershell
 docker version
 ```
 
 > ![](/static/images/docker-version.png)
+
+* You can now access the Docker host remotely
+
+> [Remote Management for Docker Host](https://docs.microsoft.com/en-us/virtualization/windowscontainers/management/manage_remotehost)
+
+* These options you likely won't configure regularly but it is good to know they exist - Docker Daemon startup options:
+
+> [Docker d startup options](https://docs.docker.com/engine/reference/commandline/dockerd/)
 

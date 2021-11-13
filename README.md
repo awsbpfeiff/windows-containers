@@ -3,5 +3,5 @@ The purpose of this content is to provide end to end coverage of running Windows
 
 ## Labs
 * [Getting Started](content/0-getting-started/../../content/0-getting-started/index.en.md)
-* [Deploying Windows Containers](content/0-getting-started/index.en.md)
+* [Deploying Windows Containers](content/1-configure/install-windows-containers/index.en.md)
 * [Learning Content](content/100-additional-resources/index.en.md)
